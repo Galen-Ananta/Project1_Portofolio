@@ -1,0 +1,144 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1), rgba(229, 231, 235, 1));
+    font-family: Segoe UI;
+}
+
+
+
+/* NAVBAR STYLING*/
+
+nav {
+    background-color:white;
+    box-shadow:5px 5px 10px rgba(0, 0, 0, 0.1);
+  
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+}
+
+nav ul {
+    list-style:none;
+    display: flex;
+    justify-content:flex-end;
+    align-items:center;
+}
+
+nav li {
+    height:50px;
+}
+
+nav a {
+    height:100%;
+    padding:0 30px;
+    text-decoration:none;
+    display:flex;
+    align-items:center;
+    color:black;
+}
+
+nav a:hover {
+    background-color:#f0f0f0;
+}
+
+nav li:first-child {
+    margin-right:auto;
+}
+
+
+
+/* MAIN STYLING*/
+
+main {
+    margin:70px 50px;
+}
+
+/* Hero Section*/
+main .section {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+main .hero {
+    flex-direction:row;
+    min-height:50vh;
+    gap:60px;
+    margin-bottom:60px;
+}
+
+main .section #hello,
+main .section #name {
+    font-size:50px;
+    font-weight:bold;
+}
+
+main .section #name {
+    color:rgb(52, 48, 255);
+}
+
+main .hero #connectBtn {
+    display:inline-block;
+    text-decoration:none;
+    color:white;
+    background-color:rgb(52, 48, 255);
+    margin-top:5px;
+    padding:8px 15px;
+    border-radius:20px;
+}
+
+main .hero #connectBtn:hover {
+    background-color:rgb(49, 48, 122);
+}
+
+main .hero p{
+    margin:0 0 15px;
+}
+
+main .hero img {
+    width:40%;
+    max-width:400px;
+    border-radius:30px;
+}
+
+/* About Section*/
+main .about {
+    width:50%;
+    min-height:35vh;
+    flex-direction:column;
+}
+
+.aboutMe,
+.skills {
+    width:100%;
+}
+
+main .about div p {
+    margin:5px 0;
+}
+
+main .about ul {
+    margin-left:40px;
+    margin-top:5px;
+} 
+
+
+
+/* FOOTER STYLING */
+
+footer {
+    padding:50px;
+    background:rgb(45, 45, 45);
+}
+
+footer p {
+    color:white;
+}
